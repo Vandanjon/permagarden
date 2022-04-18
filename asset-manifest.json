@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Vandanjon/permagarden/static/css/main.073c9b0a.css",
+    "main.js": "/Vandanjon/permagarden/static/js/main.80002e35.js",
+    "static/js/787.97ed6927.chunk.js": "/Vandanjon/permagarden/static/js/787.97ed6927.chunk.js",
+    "static/media/logo.svg": "/Vandanjon/permagarden/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Vandanjon/permagarden/index.html",
+    "main.073c9b0a.css.map": "/Vandanjon/permagarden/static/css/main.073c9b0a.css.map",
+    "main.80002e35.js.map": "/Vandanjon/permagarden/static/js/main.80002e35.js.map",
+    "787.97ed6927.chunk.js.map": "/Vandanjon/permagarden/static/js/787.97ed6927.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.80002e35.js"
+  ]
+}
