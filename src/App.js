@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { apiRequest } from "../actions/Api";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import { LOGIN } from "../actions/Auth";
 
-export default App;
+const SERVER_URL = `https://61m46.sse.codesandbox.io`;
+
+export const appMiddleware = () => (next) => (action) => {
+    next(action);
+
+    switch (action.type) {
+        case LOGIN: {
+            next(
+                apiRequest({
+                    url: `${SERVER_URL}/login`,
+
+                    method: "POST",
+
+                    data: action.payload,
+                })
+            );
+
+            break;
+        }
+
+        default:
+            break;
+    }
+};
