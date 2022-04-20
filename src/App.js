@@ -1,6 +1,6 @@
-import { apiRequest } from "../actions/Api";
+import { apiRequest } from "./actions/Api";
 
-import { LOGIN } from "../actions/Auth";
+import { LOGIN } from "./actions/Auth";
 
 const SERVER_URL = `https://61m46.sse.codesandbox.io`;
 
